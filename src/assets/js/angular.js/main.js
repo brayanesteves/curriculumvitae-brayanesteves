@@ -1,17 +1,26 @@
 let app = angular.module('myApp', []);
 function getURL() {
-    if(window.location.port) {
-        console.log(`${window.location.protocol}//${window.location.hostname}:${window.location.port}`);
-        return `${window.location.protocol}//${window.location.hostname}:${window.location.port}`;
+    let URL = "";
+    let protocol = window.location.protocol;
+    let hostname = window.location.hostname;
+    let port     = window.location.port;
+    console.log(hostname)
+    if(hostname === "127.0.0.1" || hostname === "localhost") {
+        if(port) {
+            URL = `${protocol}//${hostname}:${location.port}`;
+        } else {
+            URL = `${protocol}//${hostname}`;
+        }
+    } else if(hostname === "https://brayanesteves.github.io") {
+        URL = `https://github.com/brayanesteves/curriculumvitae-brayanesteves`;
     }
-    console.log(`${window.location.protocol}//${window.location.hostname}`);
-    return `${window.location.protocol}//${window.location.hostname}`;
+    
+    return URL;
 }
 
 app.controller('MenuController', function ($scope, $http) {
-    $http.get(`/src/assets/files/json/main.json`).then(function successCallback(response) {
+    $http.get(`${getURL()}/src/assets/files/json/main.json`).then(function successCallback(response) {
         $scope.main = response.data.menu;
-        console.log($scope.main);
     }, function errorCallback(response) {
         console.error("Unable to perform get request.")
     });
@@ -19,9 +28,8 @@ app.controller('MenuController', function ($scope, $http) {
 });
 
 app.controller('EducationController', function ($scope, $http) {
-    $http.get(`/src/assets/files/json/main.json`).then(function successCallback(response) {
+    $http.get(`${getURL()}/src/assets/files/json/main.json`).then(function successCallback(response) {
         $scope.main = response.data.education;
-        console.log($scope.main);
     }, function errorCallback(response) {
         console.error("Unable to perform get request.")
     });
@@ -29,9 +37,8 @@ app.controller('EducationController', function ($scope, $http) {
 });
 
 app.controller('ExperienceController', function ($scope, $http) {
-    $http.get(`/src/assets/files/json/main.json`).then(function successCallback(response) {
+    $http.get(`${getURL()}/src/assets/files/json/main.json`).then(function successCallback(response) {
         $scope.main = response.data.experiences;
-        console.log($scope.main);
     }, function errorCallback(response) {
         console.error("Unable to perform get request.")
     });
