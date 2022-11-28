@@ -1,8 +1,10 @@
 let app = angular.module('myApp', []);
 function getURL() {
     if(window.location.port) {
+        console.log(`${window.location.protocol}//${window.location.hostname}:${window.location.port}`);
         return `${window.location.protocol}//${window.location.hostname}:${window.location.port}`;
     }
+    console.log(`${window.location.protocol}//${window.location.hostname}`);
     return `${window.location.protocol}//${window.location.hostname}`;
 }
 
