@@ -17,7 +17,7 @@ app.controller('MenuController', function ($scope, $http) {
 });
 
 app.controller('EducationController', function ($scope, $http) {
-    $http.get('http://localhost:5500/src/assets/files/json/main.json').then(function successCallback(response) {
+    $http.get(`${getURL()}/src/assets/files/json/main.json`).then(function successCallback(response) {
         $scope.main = response.data.education;
         console.log($scope.main);
     }, function errorCallback(response) {
@@ -27,7 +27,7 @@ app.controller('EducationController', function ($scope, $http) {
 });
 
 app.controller('ExperienceController', function ($scope, $http) {
-    $http.get('http://localhost:5500/src/assets/files/json/main.json').then(function successCallback(response) {
+    $http.get(`${getURL()}/src/assets/files/json/main.json`).then(function successCallback(response) {
         $scope.main = response.data.experiences;
         console.log($scope.main);
     }, function errorCallback(response) {
