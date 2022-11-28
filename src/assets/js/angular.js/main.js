@@ -6,12 +6,16 @@ function getURL() {
     let port     = window.location.port;
     console.log(hostname)
     if(hostname === "127.0.0.1" || hostname === "localhost") {
+        console.log("ACA")
         if(port) {
+            console.log("ACAa")
             URL = `${protocol}//${hostname}:${location.port}`;
         } else {
+            console.log("ACAA")
             URL = `${protocol}//${hostname}`;
         }
     } else if(hostname === "https://brayanesteves.github.io") {
+        console.log("ACA 1")
         URL = `https://github.com/brayanesteves/curriculumvitae-brayanesteves`;
     }
     
