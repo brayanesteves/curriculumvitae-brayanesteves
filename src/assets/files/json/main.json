@@ -1,0 +1,349 @@
+{
+    "menu": [
+        {
+            "name":"home",
+            "title":"Home",
+            "url":"#home",
+            "active":1
+        },
+        {
+            "name":"about",
+            "title":"About",
+            "url":"#about",
+            "active":0
+        },
+        {
+            "name":"skills",
+            "title":"Skills",
+            "url":"#skills",
+            "active":0
+        },
+        {
+            "name":"work",
+            "title":"Work",
+            "url":"#work",
+            "active":0
+        },
+        {
+            "name":"services",
+            "title":"Services",
+            "url":"#services",
+            "active":0
+        },
+        {
+            "name":"contact",
+            "title":"Contact",
+            "url":"#contact",
+            "active":0
+        }
+    ],
+    "education": [
+        {
+            "educationalInstitution":"IUTV",
+            "title":"T.S.U",
+            "academicDiscipline":"Informática",
+            "date": {
+                "startDate":"2011",
+                "finishDate":"2014"
+            },
+            "note":"",
+            "activitiesAndGroups":"",
+            "description":"",
+            "mediaContent":[]
+        }
+    ],
+    "experiences": [
+        {
+            "position":"Senior Full Stack Developer",
+            "jobType":"Full Time",
+            "companyName":"Interfell",
+            "location":"",
+            "date": {
+                "dateInit":"04-2022",
+                "dateEnd":"11-2022"
+            },
+            "sector":"",
+            "description":[
+                "- Rest API (Spring Boot, PostgreSQL, Postman)",
+                "- Testing Unit (JUnit & Mock)",
+                "- Using Jenkinsfile",
+                "- Using SonarQube",
+                "- Testing Nodejs (Typescript)",
+                "- Gradle"
+            ],
+            "mediaContent":[]
+        },
+        {
+            "position":"Senior Full Stack Developer",
+            "jobType":"Full Time",
+            "companyName":"Intelligent Software Architecture SAS",
+            "location":"",
+            "date": {
+                "dateInit":"04-2022",
+                "dateEnd":"11-2022"
+            },
+            "sector":"",
+            "description":[
+                "- Rest API (Spring Boot, PostgreSQL, Postman)",
+                "- Testing Unit (JUnit & Mock)",
+                "- Using Jenkinsfile",
+                "- Using SonarQube",
+                "- Testing Nodejs (Typescript)",
+                "- Gradle"
+            ],
+            "mediaContent":[]
+        },
+        {
+            "position":"Semi Senior Developer Java",
+            "jobType":"Full Time",
+            "companyName":"Conexia",
+            "location":"Argentina",
+            "date": {
+                "dateInit":"06-2022",
+                "dateEnd":"10-2022"
+            },
+            "sector":"",
+            "description":[
+                "- Migrations System JEE, JSF",
+                "- Microservices Spring",
+                "- Docker",
+                "- Migrations System Maven",
+                "- Test Unit JUnit, Mock (Java)",
+                "- Test Unit Angular"
+            ],
+            "mediaContent":[]
+        },
+        {
+            "position":"CEO & Founder",
+            "jobType":"Independent professional",
+            "companyName":"Halcón Bit - Digital Agency",
+            "location":"",
+            "date": {
+                "dateInit":"10-2021",
+                "dateEnd":"09-2022"
+            },
+            "sector":"",
+            "description":[
+                "Node.js",
+                "Developer Java - Spring Boot - Microservices",
+                "Microservices",
+                "Angular",
+                "Vue.js (Nuxt, Router, Vuex)",
+                "Knowledge in Bootstrap, Vuetify, WebPack",
+                "React",
+                "Use MySQL Workbench",
+                "Jira, Bitbucket",
+                "Git [Github and Gitlab]",
+                "REST API",
+                "Laravel [Livewire]",
+                "- Development of modules to systems in [native PHP and SQL]",
+                "- Restaurant system development with [Laravel 8 and MySQL]",
+                "- Restaurant system maintenance developed in Codeigniter v3",
+                "- SCRUM methodology with Trello"
+            ],
+            "mediaContent":[]
+        },
+        {
+            "position":"Senior Full Stack Developer",
+            "jobType":"Full time",
+            "companyName":"Devups",
+            "location":"",
+            "date": {
+                "dateInit":"10-2021",
+                "dateEnd":"09-2022"
+            },
+            "sector":"",
+            "description":[],
+            "mediaContent":[]
+        },
+        {
+            "position":"Semi Senior Developer Full Stask",
+            "jobType":"Full time",
+            "companyName":"Reset SV",
+            "location":"El Salvador",
+            "date": {
+                "dateInit":"10-2021",
+                "dateEnd":"07-2022"
+            },
+            "sector":"",
+            "description":[
+                "- Development of modules to systems in [native PHP and SQL]",
+                "- Restaurant system development with [Laravel 8 and MySQL]",
+                "- Restaurant system maintenance developed in Codeigniter v3",
+                "- SCRUM methodology with Trello",
+                "- Using Git and Gitlab"
+            ],
+            "mediaContent":[]
+        },
+        {
+            "position":"Senior Technical Support Consultant",
+            "jobType":"Independent professional",
+            "companyName":"MarTecno",
+            "location":"Argentina",
+            "date": {
+                "dateInit":"10-2021",
+                "dateEnd":"06-2022"
+            },
+            "sector":"",
+            "description":[
+                "- Fix web page defects with [CSS3 and HTML5]",
+                "- Technology consulting"
+            ],
+            "mediaContent":[]
+        },
+        {
+            "position":"Full Stack Developer",
+            "jobType":"Full time",
+            "companyName":"NeoSoft Informática",
+            "location":"Chile",
+            "date": {
+                "dateInit":"12-2021",
+                "dateEnd":"04-2022"
+            },
+            "sector":"",
+            "description":[
+                "Debt Management System [Banco Central de Chile]",
+                "- API (Kotlin)",
+                "- Fronted (Reactjs)",
+                "- Database (PL/SQL [Oracle])",
+                "- Testing [SonarLint]",
+                "- Gradle"
+            ],
+            "mediaContent":[]
+        },
+        {
+            "position":"Full Stack Developer",
+            "jobType":"Full time",
+            "companyName":"Technicoders",
+            "location":"España",
+            "date": {
+                "dateInit":"05-2021",
+                "dateEnd":"04-2022"
+            },
+            "sector":"",
+            "description":[
+                "- Web page development with [native PHP and SQL]",
+                "- Development of plugin for [Wordpress], handling of [Elementor Pro]",
+                "- Using [Git & Github] to version projects",
+                "- API development with [Nodejs]",
+                "- System development with [Laravel 7 & Laivewire]",
+                "- Correct details with [CSS3] to web pages"
+            ],
+            "mediaContent":[]
+        },
+        {
+            "position":"Full Stack Developer",
+            "jobType":"Full time",
+            "companyName":"BE Consulting Group",
+            "location":"Venezuela",
+            "date": {
+                "dateInit":"01-2021",
+                "dateEnd":"02-2022"
+            },
+            "sector":"",
+            "description":[],
+            "mediaContent":[]
+        },
+        {
+            "position":"Developer Backend & Frontend",
+            "jobType":"Full time",
+            "companyName":"MOBIUS GROUP",
+            "location":"España",
+            "date": {
+                "dateInit":"07-2021",
+                "dateEnd":"10-2021"
+            },
+            "sector":"",
+            "description":[
+                "Microservices",
+                "Develop Frontend Angular",
+                "Use MySQL Workbench",
+                "Jira, Bitbucket"
+            ],
+            "mediaContent":[]
+        },
+        {
+            "position":"Developer Backend & Frontend",
+            "jobType":"Full time",
+            "companyName":"City & Real",
+            "location":"Estados Unidos",
+            "date": {
+                "dateInit":"11-2020",
+                "dateEnd":"07-2021"
+            },
+            "sector":"",
+            "description":[
+                "- Develop subsystem of shops, using API WhatsApp & Altiria API [Plataform SMS] (MySQL, PHP & JS (JQuery [AJAX]))",
+                "- Extract time from landing page videos, record in the database if they clicked on the video and record the user's time watched (MySQL, PHP & JS)",
+                "- Configure Zoom meeting for events",
+                "- Analysis of data SQL",
+                "- Ticket system PHP, MySQL & JS"
+            ],
+            "mediaContent":[]
+        },
+        {
+            "position":"Remote general technical support Software & Hardware",
+            "jobType":"Full time",
+            "companyName":"AICAD business school",
+            "location":"España",
+            "date": {
+                "dateInit":"08-2019",
+                "dateEnd":"12-2020"
+            },
+            "sector":"",
+            "description":[
+                "- Website development with the Vue.js tool.",
+                "- Development of electronic commerce with Wordpress and Woo-Commerce",
+                "- FrontEnd development with Divi",
+                "- Using Photoshop and InDesign",
+                "- Setting System Affiliate Pro",
+                "- Use of Trello, Asana and Slack"
+            ],
+            "mediaContent":[]
+        },
+        {
+            "position":"Front-End & Back-End Developer",
+            "jobType":"Full time",
+            "companyName":"Inversiones Talpacoti, C.A.",
+            "location":"Venezuela",
+            "date": {
+                "dateInit":"02-2019",
+                "dateEnd":"06-2020"
+            },
+            "sector":"",
+            "description":[
+                "- Development of projects with Dialogflow (Facebook and Telegram integration)",
+                "- Modify modules of JEE-based systems (JSP & Primfaces)",
+                "- Modify Wordpress plugins",
+                "- Use of Github, SVN & Tortoise"
+            ],
+            "mediaContent":[]
+        },
+        {
+            "position":"Front-End & Back-End Developer",
+            "jobType":"Full time",
+            "companyName":"Inversiones Brayalux 1030, C.A.",
+            "location":"Venezuela",
+            "date": {
+                "dateInit":"01-2013",
+                "dateEnd":"06-2017"
+            },
+            "sector":"",
+            "description":[
+                "- Development of Billing Systems in JavaSE", 
+                "- Development of Billing Systems in PHP",
+                "- Node.js [Create API]",
+                "- MySQL Database Development",
+                "- Development of projects with Dialogflow (Facebook and Telegram integration)",
+                "- Modify modules of JEE-based systems (JSP & Primfaces)",
+                "- Modify Wordpress plugins",
+                "- Use Git",
+                "- Use of Github, SVN & Tortoise"
+            ],
+            "mediaContent":[]
+        }
+    ],
+    "informations": [
+
+    ]
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="myApp" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -29,24 +29,9 @@
             <!--<MENU>-->
             <div class="nav__menu">
                 <div class="menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">Skills</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#work" class="nav__link">Work</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#services" class="nav__link">Services</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">Contact</a>
+                    <ul class="nav__list" ng-controller="MenuController">
+                        <li class="nav__item" ng-repeat="menu in main">
+                            <a href="{{ menu.url }}" class="nav__link {{ menu.active === 1 ? 'active-link' : '' }}">{{ menu.title }}</a>
                         </li>
                     </ul>
                 </div>
@@ -135,7 +120,7 @@
         <!--<About>-->
         <section class="about section" id="about">
             <h2 data-heading="My Intro" class="section__title">About Me</h2>
-            
+
             <div class="about__container container grid">
                 <img src="src/assets/img/png/home-img-beta.png" alt="" class="about__img">
 
@@ -165,6 +150,22 @@
 
                     </div>
 
+                    <div class="about__info grid">
+
+                        <div class="about__box">
+                            <i class='bx bx-user-voice about__icon' ></i>
+                            <h3 class="about__title">English</h3>
+                            <span class="about__subtitle">Level: A2 (Up B1)</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class='bx bx-user-voice about__icon' ></i>
+                            <h3 class="about__title">Spanish</h3>
+                            <span class="about__subtitle">Level: Native</span>
+                        </div>
+
+                    </div>
+
                     <a href="#contact" class="button">
                         <i class="uil uil-navigator button__icon"></i>
                         Contact Me
@@ -176,6 +177,56 @@
         <!--<.About>-->
         
         <!--<Qualification>-->
+        <section class="qualification section">
+            <h2 data-heading="My Journey" class="section__title">Qualification</h2>
+
+            <div class="qualification__container container grid">
+
+                <div class="education" ng-controller="EducationController">
+                    <h3 class="qualification__title">
+                        <i class='bx bxs-graduation' ></i>
+                        Education
+                    </h3>
+
+                    <div class="timeline">
+
+                        <div class="timeline__item" ng-repeat="education in main">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">{{ education.educationalInstitution }}</h3>
+                            <p class="timeline__text"></p>
+                            <span class="timeline__date">
+                                <i class='bx bx-calendar' ></i>
+                                {{ education.date.startDate }} - {{ education.date.finishDate }}
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="experience" ng-controller="ExperienceController">
+                    <h3 class="qualification__title">
+                        <i class='bx bx-briefcase-alt'></i>
+                        Experience
+                    </h3>
+
+                    <div class="timeline">
+
+                        <div class="timeline__item" ng-repeat="experience in main">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__title">{{ experience.companyName }}</h3>
+                            <h3 class="timeline__subtitle">{{ experience.position }}</h3>
+                            <p class="timeline__text" ng-repeat="experience in experience.description">{{ experience }}</p>
+                            <span class="timeline__date">
+                                <i class='bx bx-calendar' ></i>
+                                {{ experience.date.dateInit }} - {{ experience.date.dateEnd }}
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
         <!--<.Qualification>-->
         
         <!--<Skills>-->
@@ -208,6 +259,8 @@
     <script src="src/libs/mixitup/version/3.3.1/js/mixitup.min.js"></script>
     <script src="src/libs/swiper/version/8.0.7/js/swiper-bundle.min.js"></script>
     <script src="src/assets/js/main.js"></script>
+    <script src="libs/JS/angular.js/version/1.8.2/angular.min.js"></script>
+    <script src="src/assets/js/angular.js/main.js"></script>
     <!--<.MIXITUP FILTER>-->
 </body>
 
