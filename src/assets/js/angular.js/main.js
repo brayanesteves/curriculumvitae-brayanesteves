@@ -13,7 +13,7 @@ function getURL() {
         }
     } else if(hostname === "brayanesteves.github.io") {
         console.log("ACA 1")
-        URL = `https://github.com/brayanesteves/curriculumvitae-brayanesteves`;
+        URL = `https://github.com/brayanesteves/curriculumvitae-brayanesteves/blob/main`;
     }
     
     return URL;
